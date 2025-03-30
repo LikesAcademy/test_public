@@ -11,4 +11,4 @@ os.makedirs('sizes', exist_ok=True)
 sizes = [5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000]
 
 for size in sizes:
-    df.iloc[:size].to_parquet(f'sizes/{size}.parquet', index=False)
+    df.iloc[:size].to_csv(f'sizes/{size}.csv', index=False)
